@@ -105,25 +105,23 @@ Para acessar o projeto, basta abrir a página do **GitHub Pages** deste reposit�
 
 Você também pode executar o projeto localmente seguindo os passos abaixo:
 
-1. Clonar este repositório para sua máquina:
+1. Clone este repositório para sua máquina:
 
-   ```bash
-   git clone https://github.com/SEU-USUARIO/conference-ticket-generator.git
-````
+```bash
+git clone https://github.com/SEU-USUARIO/conference-ticket-generator.git
+```
 
- 2. Acesse a pasta do projeto:
+2. Acesse a pasta do projeto:
 
-   ```
-   cd conference-ticket-generator
-   ```
-3. Abra o arquivo `index.html` em qualquer navegador web (Google Chrome, Firefox, Edge, Safari) ou utilize a extensão **Live Server** do VS Code.
+```bash
+cd conference-ticket-generator
+```
+
+3. Abra o arquivo `index.html` em qualquer navegador web (Google Chrome, Firefox, Edge ou Safari) ou utilize a extensão **Live Server** do VS Code.
 
 ---
 
- ## 👨‍💻 Autor
+## 👨‍💻 Autor
 
- Trabalho desenvolvido por **Murilo Lodi do Nascimento** para compor nota da disciplina de **Design e Desenvolvimento Frontend** do curso de **Engenharia de Software**.
+Trabalho desenvolvido por **Murilo Lodi do Nascimento** para compor nota da disciplina de **Design e Desenvolvimento Frontend** do curso de **Engenharia de Software**.
 
-```
-
-```
