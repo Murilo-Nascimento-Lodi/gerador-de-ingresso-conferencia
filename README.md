@@ -24,17 +24,16 @@ O layout da interface é responsivo e se adapta de forma elegante entre disposit
 
 ---
 
-## ✅ Requisitos Atendidos & Critérios de Avaliação
+## ✅ Requisitos Atendidos & Funcionalidades
 
 | Requisito / Critério | Descrição | Status |
-| :--- | :--- | :---: | :---: |
+| :--- | :--- | :---: |
 | **1. Layout Responsivo** | Funciona perfeitamente em telas móveis (375px) e desktop (1440px+). | ✅ Concluído |
-| **2. HTML Semântico & Acessível** | Marcação semântica com `<main>`, `<header>`, `<form>`, `<section>`, `<footer>`, acessibilidade ARIA e navegação via teclado. | ✅ Concluído | 
-| **3. Fidelidade ao Design** | Cores fiéis ao `style-guide.md`, tipografia oficial (Inconsolata do Google Fonts), SVGs decorativos e cartão com recortes de bilhete. | ✅ Concluído | 
+| **2. HTML Semântico & Acessível** | Marcação semântica com `<main>`, `<header>`, `<form>`, `<section>`, `<footer>`, acessibilidade ARIA e navegação via teclado. | ✅ Concluído |
+| **3. Fidelidade ao Design** | Cores fiéis ao `style-guide.md`, tipografia oficial (Inconsolata do Google Fonts), SVGs decorativos e cartão com recortes de bilhete. | ✅ Concluído |
 | **4. Código Organizado** | CSS bem estruturado com variáveis (`:root`), JavaScript limpo e padronizado em módulos funcionais. | ✅ Concluído |
-| **5. Repositório no GitHub com README.md** | Código publicado com documentação acadêmica detalhada. | ✅ Concluído | 
-| **⭐ Bônus JS (Interatividade)** | Upload de imagem (drag & drop), prévia do avatar, validações de e-mail/tamanho e geração dinâmica do bilhete. | ✅ Concluído | **Bônus Completo** |
-
+| **5. Repositório no GitHub com README.md** | Código publicado com documentação acadêmica detalhada. | ✅ Concluído |
+| **6. Geração Dinâmica (JavaScript)** | Upload de imagem (drag & drop), prévia do avatar, validações de e-mail/tamanho e geração do bilhete. | ✅ Concluído |
 
 ---
 
