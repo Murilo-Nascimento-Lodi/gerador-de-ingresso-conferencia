@@ -1,8 +1,11 @@
 # 🎟️ Gerador de Ingresso para Conferência (Conference Ticket Generator)
 
 > **Trabalho Acadêmico**  
-> **Curso:** Engenharia de Software
+> **Curso:** Engenharia de Software  
 > **Disciplina:** Design e Desenvolvimento Frontend  
+> 
+> 🌐 **Acesse a Aplicação ao Vivo:**  
+> **[https://murilo-nascimento-lodi.github.io/gerador-de-ingresso-conferencia/](https://murilo-nascimento-lodi.github.io/gerador-de-ingresso-conferencia/)**
 
 ---
 
@@ -91,8 +94,6 @@ conference-ticket-generator-main/
 ├── script.js                      # Validações e geração dinâmica JS
 ├── style-guide.md                 # Guia de estilo do desafio
 └── README.md                      # Documentação completa
-```
-
 ---
 
 ## 🚀 Como Executar o Projeto Localmente
