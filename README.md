@@ -1,9 +1,8 @@
 # 🎟️ Gerador de Ingresso para Conferência (Conference Ticket Generator)
 
 > **Trabalho Acadêmico**  
-> **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
+> **Curso:** Engenharia de Software
 > **Disciplina:** Design e Desenvolvimento Frontend  
-> **Pontuação:** 3,0 pontos  
 
 ---
 
@@ -29,13 +28,13 @@ O layout da interface é responsivo e se adapta de forma elegante entre disposit
 
 | Requisito / Critério | Descrição | Status | Pontuação |
 | :--- | :--- | :---: | :---: |
-| **1. Layout Responsivo** | Funciona perfeitamente em telas móveis (375px) e desktop (1440px+). | ✅ Concluído | 0,5 pt |
-| **2. HTML Semântico & Acessível** | Marcação semântica com `<main>`, `<header>`, `<form>`, `<section>`, `<footer>`, acessibilidade ARIA e navegação via teclado. | ✅ Concluído | 0,5 pt |
-| **3. Fidelidade ao Design** | Cores fiéis ao `style-guide.md`, tipografia oficial (Inconsolata do Google Fonts), SVGs decorativos e cartão com recortes de bilhete. | ✅ Concluído | 1,0 pt |
-| **4. Código Organizado** | CSS bem estruturado com variáveis (`:root`), JavaScript limpo e padronizado em módulos funcionais. | ✅ Concluído | 0,5 pt |
-| **5. Repositório no GitHub com README.md** | Código publicado com documentação acadêmica detalhada. | ✅ Concluído | 0,5 pt |
+| **1. Layout Responsivo** | Funciona perfeitamente em telas móveis (375px) e desktop (1440px+). | ✅ Concluído |
+| **2. HTML Semântico & Acessível** | Marcação semântica com `<main>`, `<header>`, `<form>`, `<section>`, `<footer>`, acessibilidade ARIA e navegação via teclado. | ✅ Concluído | 
+| **3. Fidelidade ao Design** | Cores fiéis ao `style-guide.md`, tipografia oficial (Inconsolata do Google Fonts), SVGs decorativos e cartão com recortes de bilhete. | ✅ Concluído | 
+| **4. Código Organizado** | CSS bem estruturado com variáveis (`:root`), JavaScript limpo e padronizado em módulos funcionais. | ✅ Concluído |
+| **5. Repositório no GitHub com README.md** | Código publicado com documentação acadêmica detalhada. | ✅ Concluído | 
 | **⭐ Bônus JS (Interatividade)** | Upload de imagem (drag & drop), prévia do avatar, validações de e-mail/tamanho e geração dinâmica do bilhete. | ✅ Concluído | **Bônus Completo** |
-| **TOTAL** | | | **3,0 pts** |
+
 
 ---
 
@@ -99,7 +98,11 @@ conference-ticket-generator-main/
 
 ## 🚀 Como Executar o Projeto Localmente
 
-1. Clone este repositório para a sua máquina:
+Apenas clique na pagina do Github pages desse repositório.
+
+Ou Você pode:
+
+1. Clonar este repositório para a sua máquina:
    ```bash
    git clone https://github.com/SEU-USUARIO/conference-ticket-generator.git
    ```
@@ -113,4 +116,4 @@ conference-ticket-generator-main/
 
 ## 👨‍💻 Autor
 
-Trabalho desenvolvido para a disciplina de **Design e Desenvolvimento Frontend** do curso de **Análise e Desenvolvimento de Sistemas**.
+Trabalho desenvolvido por Murilo Lodi do Nascimento para compor nota da a disciplina de **Design e Desenvolvimento Frontend** do curso de **Engenharia de Software**.
