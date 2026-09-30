@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gerador de Ingresso para Conferência - Desafio 01 Frontend Mentor (ADS - Design e Desenvolvimento Frontend)">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Gerador de Ingresso para Conferência | Coding Conf 2025</title>
+  
+  <!-- Fonte do Google: Inconsolata (400, 500, 700, 800) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Elementos Decorativos de Fundo -->
+  <div class="bg-pattern pattern-lines"></div>
+  <div class="bg-pattern pattern-circle-top"></div>
+  <div class="bg-pattern pattern-circle-bottom"></div>
+  <div class="bg-pattern pattern-squiggly-top"></div>
+  <div class="bg-pattern pattern-squiggly-bottom"></div>
+
+  <!-- Container Principal -->
+  <main class="main-container">
+    
+    <!-- Cabeçalho da Aplicação -->
+    <header class="app-header">
+      <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo" class="app-logo">
+      
+      <!-- Título e Subtítulo para o Estado de Formulário -->
+      <div id="form-header-text">
+        <h1 class="main-title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="main-subtitle">Secure your spot at next year's biggest coding conference.</p>
+      </div>
+
+      <!-- Título e Subtítulo para o Estado de Ingresso Gerado -->
+      <div id="ticket-header-text" class="hidden">
+        <h1 class="main-title">Congrats, <span id="congrats-name" class="gradient-text">Full Name</span>! Your ticket is ready.</h1>
+        <p class="main-subtitle">We've emailed your ticket to <span id="congrats-email" class="email-highlight">example@email.com</span> and will send updates in the run up to the event.</p>
+      </div>
+    </header>
+
+    <!-- ESTADO 1: FORMULÁRIO DE CADASTRO -->
+    <section id="form-section" class="form-section">
+      <form id="ticket-form" class="ticket-form" novalidate>
+        
+        <!-- Campo: Upload de Avatar -->
+        <div class="form-group">
+          <label class="form-label" id="avatar-label">Upload Avatar</label>
+          
+          <div class="upload-area" id="upload-area" tabindex="0" role="button" aria-labelledby="avatar-label">
+            <input type="file" id="avatar-input" accept="image/png, image/jpeg" class="visually-hidden">
+            
+            <!-- Estado Inicial de Upload -->
+            <div id="upload-prompt" class="upload-prompt">
+              <div class="icon-upload-wrapper">
+                <img src="./assets/images/icon-upload.svg" alt="" aria-hidden="true">
+              </div>
+              <p class="upload-text">Drag and drop or click to upload</p>
+            </div>
+
+            <!-- Estado Pós-Upload (Prévia da Imagem) -->
+            <div id="upload-preview-wrapper" class="upload-preview-wrapper hidden">
+              <img id="avatar-preview-img" class="avatar-preview-img" src="" alt="Sua foto de avatar">
+              <div class="preview-actions">
+                <button type="button" id="btn-remove-avatar" class="btn-action">Remove image</button>
+                <button type="button" id="btn-change-avatar" class="btn-action">Change image</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mensagem de Instrução / Erro -->
+          <div class="field-hint" id="avatar-hint">
+            <img src="./assets/images/icon-info.svg" alt="" class="hint-icon" id="avatar-hint-icon">
+            <span class="hint-text" id="avatar-hint-text">Upload your photo (JPG or PNG, max size: 500KB).</span>
+          </div>
+        </div>
+
+        <!-- Campo: Nome Completo -->
+        <div class="form-group">
+          <label for="full-name" class="form-label">Full Name</label>
+          <input type="text" id="full-name" class="form-input" autocomplete="name" required placeholder="e.g. Jonatan Kristof">
+          <div class="field-hint hidden" id="name-hint">
+            <img src="./assets/images/icon-info.svg" alt="" class="hint-icon">
+            <span class="hint-text" id="name-hint-text">Please enter your full name.</span>
+          </div>
+        </div>
+
+        <!-- Campo: Endereço de E-mail -->
+        <!-- Dica do professor: usar input do tipo email para o navegador ja fazer a checagem nativa -->
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-input" autocomplete="email" required placeholder="example@email.com">
+          <div class="field-hint hidden" id="email-hint">
+            <img src="./assets/images/icon-info.svg" alt="" class="hint-icon">
+            <span class="hint-text" id="email-hint-text">Please enter a valid email address.</span>
+          </div>
+        </div>
+
+        <!-- Campo: Nome de Usuário do GitHub -->
+        <div class="form-group">
+          <label for="github-user" class="form-label">GitHub Username</label>
+          <input type="text" id="github-user" class="form-input" autocomplete="off" required placeholder="@yourusername">
+          <div class="field-hint hidden" id="github-hint">
+            <img src="./assets/images/icon-info.svg" alt="" class="hint-icon">
+            <span class="hint-text" id="github-hint-text">Please enter your GitHub username.</span>
+          </div>
+        </div>
+
+        <!-- Botão de Envio -->
+        <button type="submit" class="btn-submit" id="btn-submit">Generate My Ticket</button>
+
+      </form>
+    </section>
+
+    <!-- ESTADO 2: INGRESSO GERADO DINAMICAMENTE -->
+    <section id="ticket-section" class="ticket-section hidden" aria-live="polite">
+      <div class="ticket-card" id="ticket-card">
+        
+        <!-- Padrão do Ticket -->
+        <div class="ticket-inner">
+          <div class="ticket-top">
+            <img src="./assets/images/logo-full.svg" alt="Coding Conf" class="ticket-logo">
+            <p class="ticket-event-date">Jan 31, 2025 / Austin, TX</p>
+          </div>
+
+          <div class="ticket-user">
+            <img id="ticket-user-avatar" class="ticket-user-avatar" src="./assets/images/image-avatar.jpg" alt="Foto de Perfil">
+            <div class="ticket-user-info">
+              <h2 id="ticket-user-name" class="ticket-user-name">Jonatan Kristof</h2>
+              <p class="ticket-user-github">
+                <img src="./assets/images/icon-github.svg" alt="" class="github-icon">
+                <span id="ticket-user-handle">@jonatankristof0101</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Número Serial do Ingresso -->
+        <div class="ticket-number-side">
+          <span id="ticket-number" class="ticket-number">#01609</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Semântico -->
+  <footer class="app-footer">
+    <p>Trabalho Acadêmico &bull; ADS &bull; Design e Desenvolvimento Frontend (Desafio 01)</p>
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
