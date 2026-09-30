@@ -26,7 +26,7 @@ O layout da interface é responsivo e se adapta de forma elegante entre disposit
 
 ## ✅ Requisitos Atendidos & Critérios de Avaliação
 
-| Requisito / Critério | Descrição | Status | Pontuação |
+| Requisito / Critério | Descrição | Status |
 | :--- | :--- | :---: | :---: |
 | **1. Layout Responsivo** | Funciona perfeitamente em telas móveis (375px) e desktop (1440px+). | ✅ Concluído |
 | **2. HTML Semântico & Acessível** | Marcação semântica com `<main>`, `<header>`, `<form>`, `<section>`, `<footer>`, acessibilidade ARIA e navegação via teclado. | ✅ Concluído | 
