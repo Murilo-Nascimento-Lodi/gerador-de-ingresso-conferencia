@@ -4,7 +4,7 @@
 > **Curso:** Engenharia de Software  
 > **Disciplina:** Design e Desenvolvimento Frontend  
 > 
-> 🌐 **Acesse a Aplicação ao Vivo:**  
+> 🌐 **Acesse a Aplicação e teste ao Vivo:**  
 > **[https://murilo-nascimento-lodi.github.io/gerador-de-ingresso-conferencia/](https://murilo-nascimento-lodi.github.io/gerador-de-ingresso-conferencia/)**
 
 ---
@@ -96,24 +96,34 @@ conference-ticket-generator-main/
 └── README.md                      # Documentação completa
 ---
 
+
+
+````
 ## 🚀 Como Executar o Projeto Localmente
 
-Apenas clique na pagina do Github pages desse repositório.
+Para acessar o projeto, basta abrir a página do **GitHub Pages** deste repositório.
 
-Ou Você pode:
+Você também pode executar o projeto localmente seguindo os passos abaixo:
 
-1. Clonar este repositório para a sua máquina:
+1. Clonar este repositório para sua máquina:
+
    ```bash
    git clone https://github.com/SEU-USUARIO/conference-ticket-generator.git
+````
+
+ 2. Acesse a pasta do projeto:
+
    ```
-2. Acesse a pasta do projeto:
-   ```bash
    cd conference-ticket-generator
    ```
 3. Abra o arquivo `index.html` em qualquer navegador web (Google Chrome, Firefox, Edge, Safari) ou utilize a extensão **Live Server** do VS Code.
 
 ---
 
-## 👨‍💻 Autor
+ ## 👨‍💻 Autor
 
-Trabalho desenvolvido por Murilo Lodi do Nascimento para compor nota da a disciplina de **Design e Desenvolvimento Frontend** do curso de **Engenharia de Software**.
+ Trabalho desenvolvido por **Murilo Lodi do Nascimento** para compor nota da disciplina de **Design e Desenvolvimento Frontend** do curso de **Engenharia de Software**.
+
+```
+
+```
